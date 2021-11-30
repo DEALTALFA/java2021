@@ -17,7 +17,6 @@
 // Expected Auxiliary Space: O(1)
 // Constraints:
 // 1 <= n <= 10000
-import java.lang.Math;
 import java.util.Scanner;
 public class replace0with5 {
     public static void main(String[] args) {
@@ -25,7 +24,6 @@ public class replace0with5 {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int rem=0,number=0;
-        int i=0;
         while(n>0){
             rem=n%10;
             n/=10;

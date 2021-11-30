@@ -6,12 +6,12 @@ public class thirdLargestNUmber{
     Scanner sc= new Scanner(System.in);
     System.out.println("Enter number of array");
     int a=sc.nextInt();
-    int arr[a]={};
+    int arr[]= new int[a];
     for(int j=0;j<arr.length;j++){
        arr[j]=sc.nextInt(); 
     }
     Arrays.sort(arr);
     System.out.println("Third largest number in array is "+arr[arr.length-3]);
-     
+     sc.close();
 }   
 }
