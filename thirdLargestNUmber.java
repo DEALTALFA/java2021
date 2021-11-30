@@ -34,8 +34,10 @@ public class thirdLargestNUmber{
        arr[j]=sc.nextInt(); 
     }
     Arrays.sort(arr);
+    new RemoveDuplicateArray();
+    int newlen= RemoveDuplicateArray.removeDuplicateElements(arr, arr.length);
     try {
-        System.out.println("Third largest number in array is "+arr[arr.length-3]);
+        System.out.println("Third largest number in array is "+arr[newlen-3]);
 
     } catch (ArrayIndexOutOfBoundsException e) {
         System.out.println("-1");
@@ -43,4 +45,19 @@ public class thirdLargestNUmber{
     
      sc.close();
 }   
+}
+class RemoveDuplicateArray{
+    public static int removeDuplicateElements(int arr[], int n){  
+        if (n==0 || n==1){  
+            return n;  
+        }    
+        int j = 0;//for next element  
+        for (int i=0; i < n-1; i++){  
+            if (arr[i] != arr[i+1]){  
+                arr[j++] = arr[i];  
+            }  
+        }  
+        arr[j++] = arr[n-1];  
+        return j;  
+    }   
 }
