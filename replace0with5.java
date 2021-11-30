@@ -39,6 +39,6 @@ public class replace0with5 {
             n=n*10+rem;
         }
     System.out.println(n);
-        
+        sc.close();
     }
 }

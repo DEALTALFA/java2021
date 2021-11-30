@@ -10,7 +10,7 @@ class datatype
 		//use "final" if dont want to change the value
 		
 
-		int myNum = 5;	 //4byte
+		//int myNum = 5;	 //4byte
 		float myFloatNum = 5.99f; 	//4byte
 		char myLetter = 'D'; 	//2byte
 		boolean myBool = true; 	//1bit
