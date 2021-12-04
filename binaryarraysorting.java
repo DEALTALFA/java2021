@@ -31,8 +31,8 @@ public class binaryarraysorting{
             arr[i]=sc.nextInt();
         }
         arr=binsort(arr);
-        // for(int element: arr)
-        // System.out.print("\t"+element);
+        for(int element: arr)
+        System.out.print("\t"+element);
         sc.close();
 
 
@@ -51,8 +51,8 @@ public class binaryarraysorting{
         arr2[i]=0;
         for(int i=b_zero;i<arr.length;i++)
         arr2[i]=1;
-        for(int element: arr2)
-        System.out.print("\t"+element);
+        // for(int element: arr2)
+        // System.out.print("\t"+element);
         return arr2;
     }
 }
