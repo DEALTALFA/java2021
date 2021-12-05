@@ -51,8 +51,22 @@ public class binaryarraysorting{
         arr2[i]=0;
         for(int i=b_zero;i<arr.length;i++)
         arr2[i]=1;
-        // for(int element: arr2)
-        // System.out.print("\t"+element);
         return arr2;
+        /* @2nd solution
+        int low=0,high=arr.length-1;
+        while(low<high){
+            if(arr[low]==0)
+            low++;
+            else if(arr[high]==1)
+            high--;
+            else{
+                int temp=arr[low];
+                arr[low]=arr[high];
+                arr[high]=temp;
+                low++;
+                high--;
+            }
+        }
+        */
     }
 }
