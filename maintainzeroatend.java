@@ -57,8 +57,8 @@ public class maintainzeroatend {
                 high--;
             }
         }
-        System.out.println("Inside function array");
-        for(int element:arr)
-        System.out.print("\t"+element);
+        // System.out.println("Inside function array");
+        // for(int element:arr)
+        // System.out.print("\t"+element);
     }
 }
