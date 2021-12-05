@@ -21,7 +21,6 @@ Constraints:
 */
 import java.util.Scanner;
 public class binaryarraysorting{
-    private static int j;
     public static void main(String[] args) {
         System.out.println("Enter the length of array");
         Scanner sc= new Scanner(System.in);
