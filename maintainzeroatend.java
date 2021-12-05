@@ -1,4 +1,4 @@
-/* DAY 7
+/* Day 7
 Given an array arr[] of N positive integers. Push all the zero’s of the given array to the right end of the array while maintaining the order of non-zero elements.
  
 Example 1:
