@@ -57,5 +57,6 @@ public class sortarrayingivenorder {
         arrodd[odd++]=arr2[i];
         return arr2;
     } 
+    //NOt completed yet
     
 }
