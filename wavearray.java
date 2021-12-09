@@ -25,29 +25,32 @@ Constraints:
 1 ≤ n ≤ 106
 0 ≤ arr[i] ≤107
 */
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 public class wavearray {
-    public static void waveArrayFind(int a[]){
+    public static int[] waveArrayFind(int a[]){
 		int i=0,temp;
-		for(int j=i+1;j<a.length;j++){
-			if(i%2==0){
+		// because we will receiver already sorted array to create wavearray we don't need to sort
+		for(int j=i+1;j<a.length;j+=2,i+=2){
 				temp = a[i];
 				a[i] = a[j];
 				a[j] = temp;
-			}
-			i++;
 		}
-		for(int wave: a){	
-			System.out.print(wave + " ");
-		}
+		return a;
 	}
 	public static void main(String args[]){
 		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the size of array");
 		int n = input.nextInt();
 		int arr[] = new int[n];
+		System.out.println("Enter the sorted array to crate WaveArray");
 		for(int i=0;i<arr.length;i++){
 			arr[i] = input.nextInt();
 		}
-		waveArrayFind(arr);
+		arr=waveArrayFind(arr);
+		System.out.println("Wavearray:");
+		System.out.println(""+Arrays.toString(arr));
 	}
 }
