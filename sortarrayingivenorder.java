@@ -37,25 +37,25 @@ public class sortarrayingivenorder {
         int arr[]= new int[sc.nextInt()];
         System.out.println("Enter the array element");
         for(int i=0;i<arr.length;i++)
-        arr[i]=sc.nextInt();
+            arr[i]=sc.nextInt();
         sc.close();
         int finalArray[] = leftIndex(arr, arr.length);
     }
     private static int[] leftIndex(int []arr2,int N){
         int even=0,len=N,odd=0;
         for(int i=0;i<len;i++)
-        if(arr2[i]%2==0)
-        even++;
-        else
-        odd++;
+            if(arr2[i]%2==0)
+                even++;
+            else
+                odd++;
         int arreven[]=new int[even],arrodd[]=new int[odd];
         even=0;odd=0;
         for(int i=0;i<arr2.length;i++)
-        if(arr2[i]%2==0)
-        arreven[even++]=arr2[i];
-        else
-        arrodd[odd++]=arr2[i];
-        return arr2;
+            if(arr2[i]%2==0)
+                arreven[even++]=arr2[i];
+            else
+                arrodd[odd++]=arr2[i];
+            return arr2;
     } 
     //NOt completed yet
     
