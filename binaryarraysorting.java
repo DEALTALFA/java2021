@@ -34,9 +34,7 @@ public class binaryarraysorting{
         for(int element: arr)
         System.out.print("\t"+element);
         sc.close();
-
-
-
+ 
     }
     private static int[] binsort(int []arr){
         int arr2[]=new  int[arr.length];
